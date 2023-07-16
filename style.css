@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+}
+body{
+    padding-top: 120px;
+    background-color: hwb(171 88% 4%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* nav */
+.navbar{
+    background-color: #0B666A;
+    height: 100px;
+    padding-top: 20px;
+    position: fixed;
+    top:0;
+    width: 100%;
+}
+.nav-list{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    border-radius: 10px;
+    background-color: #0B666A;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 25px;
+    padding: 15px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  .button:hover{
+    border: 1px solid white;
+  }
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  span{
+    color: hsl(0, 5%, 96%);
+    font-family: serif;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+/* Body */
+.main-container{
+    margin-bottom: 100px;
+}
+
+.main-container > h1 {
+    text-align: center;
+    font-size: 100px;
+    margin-top: 100px;
+    font-family: 'Crimson Pro', serif;
+    font-weight: 100;
+    color: #1A5D1A;
+}
+
+.main-container > p{
+    text-align: center;
+    font-size: 30px;
+    font-family: serif;
+}
+
+
+.main-sub-container{
+    width: 70%;
+    margin-left: 15%;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    padding-top: 120px;
+    row-gap: 20px;
+    padding-bottom: 100px;
+    column-gap: 10px;
+}
+.image-container{
+    border: 2px solid;
+    display: flex;
+    width: 30%;
+    flex-direction: row;
+    border-radius: 10px;
+}
+img{
+    width: 100%;
+    height:fit-content;
+}
+
+
+
+
+
+/* footer */
+footer{
+    height:100px;
+    background-color: #0B666A;
+}
+.footer > h2{
+    font-weight: 100;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+    font-size: 20px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media queries */
+
+@media (max-width:600px){
+    .main-sub-container{
+        flex-direction: column;
+    }
+    .image-container{
+        width: 100%;
+    }
+}
+@media (min-width:601px) and (max-width:1200px){
+    .main-sub-container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 10px;
+    }
+    .image-container{
+        width: 47%;
+    }
+}
